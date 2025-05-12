@@ -43,18 +43,7 @@ GO
 
 
 ------------------------------------------------------------
-CREATE TABLE Accounts (
-    AccountNumber INT PRIMARY KEY,
-    AccountType NVARCHAR(20),  
-    Balance DECIMAL(18,2)
-);
 
-
-INSERT INTO Accounts VALUES (101, 'Savings', 10000.00);
-INSERT INTO Accounts VALUES (102, 'Checking', 5000.00);
-
-
-----------------------------------------------------------------
 CREATE TABLE ChatMessages (
     MessageID INT IDENTITY(1,1) PRIMARY KEY,
     Sender NVARCHAR(100),
